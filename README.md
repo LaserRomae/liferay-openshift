@@ -1,2 +1,1 @@
-# liferay-openshift
-Openshift liferay template
+Container Liferay per Openshift
