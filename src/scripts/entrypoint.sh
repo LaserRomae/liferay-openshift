@@ -8,7 +8,8 @@ echo "setting tomcat to ${memory} mb"
 sed -i "s#2560#${memory}#g" /opt/liferay/tomcat-9.0.17/bin/setenv.sh
 
 # adding the correct JAVA path
-echo 'JAVA_HOME="/usr/lib/jvm/java-1.8.0"' >> /opt/liferay/tomcat-9.0.17/bin/setenv.sh
+echo "" >> /opt/liferay/tomcat-9.0.17/bin/setenv.sh
+echo 'JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk"' >> /opt/liferay/tomcat-9.0.17/bin/setenv.sh
 echo "starting tomcat"
 sh startup.sh
 
