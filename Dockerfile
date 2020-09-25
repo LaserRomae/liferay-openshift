@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum -y install java-11-openjdk bc net-tools && yum -y clean all
+RUN yum -y install java-1.8.0-openjdk bc net-tools && yum -y clean all
 RUN curl -kLv -O "https://github.com/liferay/liferay-portal/releases/download/7.1.3-ga4/liferay-ce-portal-tomcat-7.1.3-ga4-20190508171117552.tar.gz"
 RUN cd /opt && tar xvfz /liferay-ce-portal-tomcat-7.1.3-ga4-20190508171117552.tar.gz && mv liferay-portal-7.1.3-ga4 liferay && rm -rf /liferay-ce-portal-tomcat-7.1.3-ga4-20190508171117552.tar.gz
 
