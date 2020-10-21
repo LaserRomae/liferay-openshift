@@ -12,7 +12,7 @@ JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk"
 EOF
 
 cat <<EOF > /opt/liferay/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.cfg
-operantionMode="REMOTE"
+operationMode="REMOTE"
 transportAdresses="liferay-es.processo-standard-ril.svc.cluster.local:9300"
 logExceptionsOnly="false"
 clusterName="LiferayElasticsearchCluster"
