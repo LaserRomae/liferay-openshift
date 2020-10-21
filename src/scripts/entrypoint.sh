@@ -11,12 +11,12 @@ CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=tr
 JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk"
 EOF
 
-cat <<EOF > /opt/liferay/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.cfg
+cat <<EOB > /opt/liferay/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.cfg
 operationMode="REMOTE"
 transportAddresses="liferay-es.processo-standard-ril.svc.cluster.local:9300"
 logExceptionsOnly="false"
 clusterName="LiferayElasticsearchCluster"
-EOF
+EOB
 
 
 echo "starting tomcat"
