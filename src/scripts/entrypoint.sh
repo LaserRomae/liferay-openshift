@@ -13,7 +13,7 @@ EOF
 
 cat <<EOF > /opt/liferay/osgi/configs/com.liferay.portal.search.elasticsearch6.configuration.ElasticsearchConfiguration.cfg
 operationMode="REMOTE"
-transportAdresses="liferay-es.processo-standard-ril.svc.cluster.local:9300"
+transportAddresses="liferay-es.processo-standard-ril.svc.cluster.local:9300"
 logExceptionsOnly="false"
 clusterName="LiferayElasticsearchCluster"
 EOF
